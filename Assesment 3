@@ -1,0 +1,27 @@
+using namespace std;
+
+class vehicle {
+public:
+    vehicle() { 
+        cout << "I am a vehicle" << endl;
+    }
+};
+
+class twoWheeler : public vehicle {
+public:
+    twoWheeler() { 
+        cout << "I have two wheels" << endl;
+    }
+};
+
+class bike : public twoWheeler {
+public:
+    bike() {
+        cout << "I am a bike" << endl;
+    }
+};
+
+int main() {
+    bike myBike;
+    return 0;
+}
